@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator - JavaScript</title>
+
+    <!--font awesome(for icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="title">Random Password Generator</h2>
+
+      <div class="length-box">
+        <span>Password Length :</span>
+        <input type="number" value="6" min="6" max="30" />
+      </div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Password" readonly />
+        <a href="#" class="copy-btn" onclick="copyPass(this)"
+          ><i class="fas fa-clipboard"></i
+        ></a>
+      </div>
+
+      <button class="generate-btn" onclick="generatePass()">Generate</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
